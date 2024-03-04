@@ -1,0 +1,25 @@
+{
+    "is_testing":false,
+    "is_check_api":true,
+    "token":"TOKEN",
+    "email_on_exception":true,
+    "email_logs_on_exception":true,
+    "email":"EMAIL",
+    "email_password":"APP PASSWORD",
+    "email_receiver":"EMAIL",
+    "email_ccs":["EMAIL"],
+    "smtp_server":"smtp.gmail.com",
+    "smtp_port":465,
+    "save_path":"./",
+    "experiment_columns":["id", "name", "start_date", "end_date"],
+    "stock_columns":["id", "name", "storage_id", "location_in_box", "stored_on"],
+    "database_columns":[
+        "id",
+        "name",
+        "Lines",
+        "Lentivirus/PB",
+        "Cell line (old name)",
+        "Clone (old name)"
+    ],
+    "log_level":"DEBUG"
+}

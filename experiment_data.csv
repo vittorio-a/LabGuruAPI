@@ -1,0 +1,18 @@
+id,name,Lines,Lentivirus/PB,Cell line (old name),Clone (old name),experiment_id,experiment_name,experiment_start_date,experiment_end_date
+936,CTL04G,CTL04G,,809-1,7,42,2024-02-13 - Vittorio Aiello's Experiment 006,2024-02-13 09:21,2024-02-14 09:21
+944,CTL08A,CTL08A,,KOLF,2C11,43,test,2024-02-13 10:26,2024-02-29 10:26
+944,CTL08A,CTL08A,,KOLF,2C11,45,2024-02-13 - MarcoTullio Rigoli's organoids differentiation 1,2024-02-13 15:43,2024-02-14 15:43
+972,DUP01G,DUP01G,,Cf,G,54,2024-02-14 - Vittorio Aiello's Experiment 001,2024-02-14 12:22,2024-02-15 12:22
+974,DUP02J,DUP02J,,242,J,54,2024-02-14 - Vittorio Aiello's Experiment 001,2024-02-14 12:22,2024-02-15 12:22
+978,DUP02KWBSClone15,DUP02K,,242,K,54,2024-02-14 - Vittorio Aiello's Experiment 001,2024-02-14 12:22,2024-02-15 12:22
+984,DUP04A,DUP04A,,103,A,54,2024-02-14 - Vittorio Aiello's Experiment 001,2024-02-14 12:22,2024-02-15 12:22
+986,DUP06A,DUP06A,,104,A,55,2024-02-14 - Vittorio Aiello's Experiment 002,2024-02-14 12:23,2024-02-15 12:23
+1022,WBS01A,WBS01A,,339,C2,55,2024-02-14 - Vittorio Aiello's Experiment 002,2024-02-14 12:23,2024-02-15 12:23
+1022,WBS01A,WBS01A,,339,C2,55,2024-02-14 - Vittorio Aiello's Experiment 002,2024-02-14 12:23,2024-02-15 12:23
+1024,WBS01C PB,WBS01C,PB,339,C7,55,2024-02-14 - Vittorio Aiello's Experiment 002,2024-02-14 12:23,2024-02-15 12:23
+1030,WBS04B,WBS04B,,306,O,55,2024-02-14 - Vittorio Aiello's Experiment 002,2024-02-14 12:23,2024-02-15 12:23
+1031,WBS04B PB,WBS04B,PB,306,O,55,2024-02-14 - Vittorio Aiello's Experiment 002,2024-02-14 12:23,2024-02-15 12:23
+1032,WBS07C,WBS07C,,M228,C,55,2024-02-14 - Vittorio Aiello's Experiment 002,2024-02-14 12:23,2024-02-15 12:23
+1041,WVS04A PB,WVS04A,PB,A1544,1,60,Mock experiment,2024-02-15 15:07,2024-02-16 15:07
+1049,Mock,Mock,Mock,Mock,Mock,61,Mock experiment 2,2024-02-15 15:08,2024-02-16 15:08
+1049,Mock,Mock,Mock,Mock,Mock,64,2024-02-16 - Emanuele Villa's Experiment 001,2024-02-16 14:14,2024-02-17 14:14

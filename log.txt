@@ -1,0 +1,53 @@
+2024-03-04 17:15:13 - INFO - Config loaded: {'is_testing': False, 'is_check_api': True, 'token': 'TOKEN', 'email_on_exception': True, 'email_logs_on_exception': True, 'email': 'vittorio.aiello98@gmail.com', 'email_password': 'APP PASSWORD', 'email_receiver': 'vittorio.aiello@fht.org', 'email_ccs': ['emanuele.villa@fht.org'], 'smtp_server': 'smtp.gmail.com', 'smtp_port': 465, 'save_path': './', 'experiment_columns': ['id', 'name', 'start_date', 'end_date'], 'stock_columns': ['id', 'name', 'storage_id', 'location_in_box', 'stored_on'], 'database_columns': ['id', 'name', 'Lines', 'Lentivirus/PB', 'Cell line (old name)', 'Clone (old name)'], 'log_level': 'DEBUG'}
+2024-03-04 17:15:13 - INFO - Launched in production mode, using LabGuru APIs
+2024-03-04 17:15:13 - INFO - Testing APIs
+2024-03-04 17:15:13 - ERROR - Unhandled exception
+Traceback (most recent call last):
+  File "/Users/vittorio.aiello/github/LabGuruAPI/update_db.py", line 78, in <module>
+    labguruApi.test_apis()
+  File "/Users/vittorio.aiello/github/LabGuruAPI/labguruApi.py", line 228, in test_apis
+    self._test_failure(e)
+  File "/Users/vittorio.aiello/github/LabGuruAPI/labguruApi.py", line 188, in _test_failure
+    raise exception
+  File "/Users/vittorio.aiello/github/LabGuruAPI/labguruApi.py", line 201, in test_apis
+    mock_api_experiments = self.get_database_experiments(self.MOCK_DATABASE_ID)
+  File "/Users/vittorio.aiello/github/LabGuruAPI/labguruApi.py", line 150, in get_database_experiments
+    self._handle_exepction(e)
+  File "/Users/vittorio.aiello/github/LabGuruAPI/labguruApi.py", line 61, in _handle_exepction
+    raise e
+  File "/Users/vittorio.aiello/github/LabGuruAPI/labguruApi.py", line 146, in get_database_experiments
+    experiments = self._get_with_pagination(
+  File "/Users/vittorio.aiello/github/LabGuruAPI/labguruApi.py", line 70, in _get_with_pagination
+    response_meta = response["meta"]
+KeyError: 'meta'
+2024-03-04 17:15:58 - INFO - Config loaded: {'is_testing': False, 'is_check_api': True, 'token': 'TOKEN', 'email_on_exception': True, 'email_logs_on_exception': True, 'email': 'vittorio.aiello98@gmail.com', 'email_password': 'APP PASSWORD', 'email_receiver': 'vittorio.aiello@fht.org', 'email_ccs': ['emanuele.villa@fht.org'], 'smtp_server': 'smtp.gmail.com', 'smtp_port': 465, 'save_path': './', 'experiment_columns': ['id', 'name', 'start_date', 'end_date'], 'stock_columns': ['id', 'name', 'storage_id', 'location_in_box', 'stored_on'], 'database_columns': ['id', 'name', 'Lines', 'Lentivirus/PB', 'Cell line (old name)', 'Clone (old name)'], 'log_level': 'DEBUG'}
+2024-03-04 17:15:58 - INFO - Launched in production mode, using LabGuru APIs
+2024-03-04 17:15:58 - INFO - Testing APIs
+2024-03-04 17:15:58 - ERROR - Unhandled exception
+Traceback (most recent call last):
+  File "/Users/vittorio.aiello/github/LabGuruAPI/update_db.py", line 78, in <module>
+    labguruApi.test_apis()
+  File "/Users/vittorio.aiello/github/LabGuruAPI/labguruApi.py", line 228, in test_apis
+    self._test_failure(e)
+  File "/Users/vittorio.aiello/github/LabGuruAPI/labguruApi.py", line 188, in _test_failure
+    raise exception
+  File "/Users/vittorio.aiello/github/LabGuruAPI/labguruApi.py", line 201, in test_apis
+    mock_api_experiments = self.get_database_experiments(self.MOCK_DATABASE_ID)
+  File "/Users/vittorio.aiello/github/LabGuruAPI/labguruApi.py", line 150, in get_database_experiments
+    self._handle_exepction(e)
+  File "/Users/vittorio.aiello/github/LabGuruAPI/labguruApi.py", line 61, in _handle_exepction
+    raise e
+  File "/Users/vittorio.aiello/github/LabGuruAPI/labguruApi.py", line 146, in get_database_experiments
+    experiments = self._get_with_pagination(
+  File "/Users/vittorio.aiello/github/LabGuruAPI/labguruApi.py", line 70, in _get_with_pagination
+    response_meta = response["meta"]
+KeyError: 'meta'
+2024-03-04 17:17:30 - INFO - Config loaded: {'is_testing': False, 'is_check_api': True, 'token': 'TOKEN', 'email_on_exception': True, 'email_logs_on_exception': True, 'email': 'vittorio.aiello98@gmail.com', 'email_password': 'APP PASSWORD', 'email_receiver': 'vittorio.aiello@fht.org', 'email_ccs': ['emanuele.villa@fht.org'], 'smtp_server': 'smtp.gmail.com', 'smtp_port': 465, 'save_path': './', 'experiment_columns': ['id', 'name', 'start_date', 'end_date'], 'stock_columns': ['id', 'name', 'storage_id', 'location_in_box', 'stored_on'], 'database_columns': ['id', 'name', 'Lines', 'Lentivirus/PB', 'Cell line (old name)', 'Clone (old name)'], 'log_level': 'DEBUG'}
+2024-03-04 17:17:30 - INFO - Launched in production mode, using LabGuru APIs
+2024-03-04 17:17:33 - INFO - Testing APIs
+2024-03-04 17:17:43 - INFO - Config loaded: {'is_testing': False, 'is_check_api': True, 'token': 'TOKEN', 'email_on_exception': True, 'email_logs_on_exception': True, 'email': 'vittorio.aiello98@gmail.com', 'email_password': 'APP PASSWORD', 'email_receiver': 'vittorio.aiello@fht.org', 'email_ccs': ['emanuele.villa@fht.org'], 'smtp_server': 'smtp.gmail.com', 'smtp_port': 465, 'save_path': './', 'experiment_columns': ['id', 'name', 'start_date', 'end_date'], 'stock_columns': ['id', 'name', 'storage_id', 'location_in_box', 'stored_on'], 'database_columns': ['id', 'name', 'Lines', 'Lentivirus/PB', 'Cell line (old name)', 'Clone (old name)'], 'log_level': 'DEBUG'}
+2024-03-04 17:17:43 - INFO - Launched in production mode, using LabGuru APIs
+2024-03-04 17:17:46 - INFO - Testing APIs
+2024-03-04 17:19:05 - INFO - Config loaded: {'is_testing': False, 'is_check_api': True, 'token': 'TOKEN', 'email_on_exception': True, 'email_logs_on_exception': True, 'email': 'vittorio.aiello98@gmail.com', 'email_password': 'APP PASSWORD', 'email_receiver': 'vittorio.aiello@fht.org', 'email_ccs': ['emanuele.villa@fht.org'], 'smtp_server': 'smtp.gmail.com', 'smtp_port': 465, 'save_path': './', 'experiment_columns': ['id', 'name', 'start_date', 'end_date'], 'stock_columns': ['id', 'name', 'storage_id', 'location_in_box', 'stored_on'], 'database_columns': ['id', 'name', 'Lines', 'Lentivirus/PB', 'Cell line (old name)', 'Clone (old name)'], 'log_level': 'DEBUG'}
+2024-03-04 17:19:05 - INFO - Launched in production mode, using LabGuru APIs
+2024-03-04 17:19:07 - INFO - Testing APIs
