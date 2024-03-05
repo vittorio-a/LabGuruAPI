@@ -32,6 +32,7 @@ class LabguruApi:
     API_BASE_URL = r"https://eu.labguru.com/api/v1/"
     ENDPOINT_EXPERIMENT = API_BASE_URL + r"experiments"
     ENDPOINT_ELEMENT = API_BASE_URL + r"elements/"
+    ENDPOINT_UUID =  r"blob:https://eu.labguru.com/"
     ENDPOINT_ITEM_EXPERIMENT = API_BASE_URL + r"experiments/item_experiments"
     ENDPOINT_ITEM_STOCK = API_BASE_URL + r"stocks/item_stocks"
     ENDPOINT_DATABASE = API_BASE_URL + r"biocollections/database"
@@ -226,6 +227,21 @@ class LabguruApi:
                 assert api_expected == expected_stock, self.ERROR_MOCK_STOCK
         except Exception as e:
             self._test_failure(e)
+
+    def get_experiment_by_id(self, id: int):
+        return self.session.get(self.ENDPOINT_EXPERIMENT + "/" + str(id)).json()
+
+    def get_excel_elements_list_by_experiment_id(self, id: int):
+        experiment = self.get_experiment_by_id(id)
+        exel_ids = []
+        for procedure in experiment["experiment_procedures"]:
+            for element in procedure['experiment_procedure']["elements"]:
+                if element["element_type"] == "excel":
+                    exel_ids.append(element["id"])
+        return exel_ids
+
+    def get_element_by_id(self, id: int):
+        return self.session.get(self.ENDPOINT_ELEMENT + str(id)).json()
 
 
 class FakeGuru:
