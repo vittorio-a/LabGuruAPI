@@ -12,42 +12,46 @@ LOG_FILE = r"log.txt"
 
 def send_error_email(e):
     #stack trace email
-    error_email = EmailMessage()
-    error_email["Subject"] = "LabGuru report exception"
-    error_email["From"] = config.sender_email
-    error_email["To"] = config.receiver_email
-    error_email["Cc"] = config.email_ccs
-    email_body = (
-        "LabGuru report exception with the following stack trace\n\n\n{}".format(
-            traceback.format_exc()
-        )
-    )
-    error_email.set_content(email_body)
-    reciepients = config.email_ccs + [config.receiver_email]
-    smtp = smtplib.SMTP_SSL(config.smtp_server, config.smtp_port)
-    smtp.login(config.sender_email, config.password_email)
-    smtp.send_message(error_email, to_addrs=reciepients)
-    smtp.quit()
-    logger.info("Stacktrace sent by email")
+    # commented for gmail API change
+    # error_email = EmailMessage()
+    # error_email["Subject"] = "LabGuru report exception"
+    # error_email["From"] = config.sender_email
+    # error_email["To"] = config.receiver_email
+    # error_email["Cc"] = config.email_ccs
+    # email_body = (
+    #     "LabGuru report exception with the following stack trace\n\n\n{}".format(
+    #         traceback.format_exc()
+    #     )
+    # )
+    # error_email.set_content(email_body)
+    # reciepients = config.email_ccs + [config.receiver_email]
+    # smtp = smtplib.SMTP_SSL(config.smtp_server, config.smtp_port)
+    # smtp.login(config.sender_email, config.password_email)
+    # smtp.send_message(error_email, to_addrs=reciepients)
+    # smtp.quit()
+    # logger.info("Stacktrace sent by email")
+    pass
 
 def send_log_email(e):
     #stack trace email
-    log_email = EmailMessage()
-    log_email["Subject"] = "LabGuru report log"
-    log_email["From"] = config.sender_email
-    log_email["To"] = config.receiver_email
-    log_email["Cc"] = config.email_ccs
-    email_body =  "LabGuru report exception, logs attached"
-    log_email.set_content(email_body)
-    with open(LOG_FILE, "r") as f:
-        logs = f.read()
-    log_email.add_attachment(logs)
-    reciepients = config.email_ccs + [config.receiver_email]
-    smtp = smtplib.SMTP_SSL(config.smtp_server, config.smtp_port)
-    smtp.login(config.sender_email, config.password_email)
-    smtp.send_message(log_email, to_addrs=reciepients)
-    smtp.quit()
-    logger.info("Logs sent by email")
+    # # commented for gmail API change
+    # log_email = EmailMessage()
+    # log_email["Subject"] = "LabGuru report log"
+    # log_email["From"] = config.sender_email
+    # log_email["To"] = config.receiver_email
+    # log_email["Cc"] = config.email_ccs
+    # email_body =  "LabGuru report exception, logs attached"
+    # log_email.set_content(email_body)
+    # with open(LOG_FILE, "r") as f:
+    #     logs = f.read()
+    # log_email.add_attachment(logs)
+    # reciepients = config.email_ccs + [config.receiver_email]
+    # smtp = smtplib.SMTP_SSL(config.smtp_server, config.smtp_port)
+    # smtp.login(config.sender_email, config.password_email)
+    # smtp.send_message(log_email, to_addrs=reciepients)
+    # smtp.quit()
+    # logger.info("Logs sent by email")
+    pass
 
 time_format = r"%Y-%m-%d %H:%M:%S"
 format=r"%(asctime)s - %(levelname)s - %(message)s"

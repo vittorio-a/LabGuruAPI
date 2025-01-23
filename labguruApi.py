@@ -12,19 +12,20 @@ class LabGuruReportConfig:
         self.database_columns = config["database_columns"]
         self.experiment_columns = config["experiment_columns"]
         self.stock_columns = config["stock_columns"]
-        self.sender_email = config["email"]
-        self.receiver_email = config["email_receiver"]
-        self.password_email = config["email_password"]
-        self.email_ccs = config["email_ccs"]
-        self.smtp_server = config["smtp_server"]
-        self.smtp_port = config["smtp_port"]
-        self.email_on_exception = config["email_on_exception"]
+        # commented for gmail API change
+        # self.sender_email = config["email"]
+        # self.receiver_email = config["email_receiver"]
+        # self.password_email = config["email_password"]
+        # self.email_ccs = config["email_ccs"]
+        # self.smtp_server = config["smtp_server"]
+        # self.smtp_port = config["smtp_port"]
+        # self.email_on_exception = config["email_on_exception"]
         self.save_path = config["save_path"]
         self.token = config["token"]
         self.is_testing = config["is_testing"]
         self.is_check_api = config["is_check_api"]
         self.log_level = config["log_level"]
-        self.email_logs_on_exception = ["email_logs_on_exception"]
+        #self.email_logs_on_exception = ["email_logs_on_exception"]
 
 
 class LabguruApi:
